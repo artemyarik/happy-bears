@@ -375,7 +375,7 @@ option{
   justify-content: center;
   align-items: flex-start;
   overflow-y: scroll;
-  padding: 80px auto 553 auto;
+  padding-top: 20px;
 }
 .modal_active {
   position: fixed;
@@ -406,6 +406,7 @@ option{
   background: #FFFFFF;
   border-radius: 6px;
   position: relative;
+  flex: 0 0 auto;
 }
 .modal__img, .modal__img__in{
   position:relative;
@@ -414,10 +415,8 @@ option{
   max-height: 400px;
 }
 .modal__info{
-  max-width: 354px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  max-width: 460px;
+  max-height: 400px;
   padding: 20px 30px;
   overflow: auto;
   border-radius: 0px 0px 6px 6px;
@@ -432,17 +431,21 @@ option{
 .modal__info_text{
   max-width: 180px;
   max-height: 34px;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 24px;
   color: #767676;
 }
 .modal__msg{
-  max-width: 400px;
-  max-height: 136px;
   font-size: 14px;
   line-height: 17px;
   color: #767676;
+  margin-bottom: 44px;
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer{
   flex-shrink: 0;
